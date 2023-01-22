@@ -8,15 +8,8 @@
     }
     img {
       width: 300px; /* adjust as desired */
-    }
-    img:hover {
-      cursor: pointer; /* change cursor to pointer on hover */
-    }
-    img.hover-img {
-      display: none; /* initially hide hover image */
-    }
-    img:hover + img.hover-img {
-      display: block; /* show hover image when cursor is over original image */
+      margin: 0 auto; /* center the image horizontally */
+      display: block; /* center the image vertically */
     }
   </style>
 </head>
@@ -26,8 +19,16 @@
   <h1>My projects: <a href="https://awaliambung.github.io/kase-homepage/">Kase (Nationstates Nation)</a></h1>
   
   <br>
-  <img src="https://i.imgur.com/viTNftL.jpeg" alt="My Image">
-  <img class="hover-img" src="https://i.imgur.com/Uoab6pB.jpeg" alt="My hover Image">
+  <img id="image1" src="https://i.imgur.com/your-image-link-1.jpg" alt="My Image">
   
+  <script>
+    var image1 = document.getElementById("image1");
+    image1.addEventListener("mouseover", function() {
+      this.src = "https://i.imgur.com/Uoab6pB.jpeg";
+    });
+    image1.addEventListener("mouseout", function() {
+      this.src = "https://i.imgur.com/viTNftL.jpeg";
+    });
+  </script>
 </body>
 </html>
