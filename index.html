@@ -1,41 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>awaliambung's website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<!-- navigational bar -->
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-<!-- main -->
-
-    <section class="hero-section">
-        <h1>HOME</h1>
-        <div class="home-content">
-            <img src="house.png" alt="Profile Image">
-        </div>
-    </section>
-
-<!-- footer -->
-
-    <footer>
-        <p>© 2024 Ambung Awali</p>
-    </footer>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>Ambung Awali</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="./assets/favicon.png" type="image/png">
+   </head>
+   <body>
+      <div class="container">
+         <!-- LEFT SIDE -->
+         <div class="left-column">
+            <!-- PROFILE PICTURE -->
+            <img src="./assets/profile-picture.gif" alt="My Picture" class="personal-pic">
+            <!-- CURRENTLY -->
+            <div class="currently-section">
+               <h2>Currently</h2>
+               <table>
+                  <tr>
+                     <td><strong>Reading:</strong></td>
+                     <td>Signs by Laura Lynne Jackson</td>
+                  </tr>
+                  <tr>
+                     <td><strong>Playing:</strong></td>
+                     <td>Kingdom Come: Deliverance</td>
+                  </tr>
+                  <tr>
+                     <td><strong>Listening:</strong></td>
+                     <td>Baller by Abor & Tynna</td>
+                  </tr>
+                  <tr>
+                     <td><strong>Watching:</strong></td>
+                     <td>SPY X FAMILY</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <!-- RIGHT SIDE -->
+         <div class="right-column">
+            <!-- WELCOME -->
+            <div class="welcome-section">
+               <img src="./assets/welcome.gif" alt="Welcome GIF" class="welcome-gif">
+            </div>
+            <!-- BIO -->
+            <div class="bio-section">
+               <h1>Hello there! I'm Ambung!</h1>
+               <p class="bio-text">
+                  I’m not a developer, nor am I planning to be one.
+                  I just like scripting random stuff for fun.
+               </p>
+            </div>
+            <div><img src="./assets/lights.gif" alt="Town Name Generator">
+            </div>
+            <!-- UPDATES -->
+            <div class="updates-section">
+               <h2>Life log</h2>
+               <div id="updates-list" class="scrollable-box">
+               </div>
+            </div>
+            <!-- PROJECTS -->
+            <div class="projects-section">
+               <h2>Personal github projects</h2>
+               <div class="projects-container">
+                  <!-- PROJECT 1 -->
+                  <div class="project-item">
+                     <img src="./assets/book.gif" alt="Town Name Generator">
+                     <a href="https://github.com/awaliambung/town-name-generator" target="_blank">Town Name Generator</a>
+                  </div>
+                  <!-- PROJECT 2 -->
+                  <div class="project-item">
+                     <img src="./assets/skull.gif" alt="Project 2 GIF">
+                     <a href="https://github.com/awaliambung/nationstates-largest-cities-overview-generator" target="_blank">Largest City BBCode Generator</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="footer-section">
+         <div class="social-buttons">
+            <a href="https://steamcommunity.com/id/ambung/" target="_blank">
+            <img src="./assets/steam.gif" alt="Steam">
+            </a>
+            <a href="https://github.com/awaliambung" target="_blank">
+            <img src="./assets/reddit.gif" alt="Reddit">
+            </a>
+            <a href="https://open.spotify.com/user/mu4t5gsw57nv5xe3wla46pbkq" target="_blank">
+            <img src="./assets/spotify.gif" alt="Spotify">
+            </a>
+            <a href="https://www.youtube.com/@ambung" target="_blank">
+            <img src="./assets/youtube.gif" alt="YouTube">
+            </a>
+         </div>
+         <div class="software-buttons">
+            <a href="https://www.debian.org/" target="_blank">
+            <img src="./assets/debian.gif" alt="Debian">
+            </a>
+            <a href="https://bitwarden.com/" target="_blank">
+            <img src="./assets/bitwarden.gif" alt="Bitwarden">
+            </a>
+         </div>
+         <div class="random-buttons">
+            <img src="./assets/bonk.gif" alt="Bonk">
+            <img src="./assets/cookies.gif" alt="Cookies">
+         </div>
+         <div align="center">
+            <a href='https://www.counter12.com'><img src='https://www.counter12.com/img-A4Y19aAwZcz9cZBB-70.gif' border='0' alt='counter'></a>
+            <script type='text/javascript' src='https://www.counter12.com/ad.js?id=A4Y19aAwZcz9cZBB'></script>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
 </html>
